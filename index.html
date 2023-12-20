@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul salaire brut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="big_container">
+            <div id="titre">
+                <h1>Calcul Du Salaire Brut En Net</h1>
+            </div>
+            <div id="container_gauche_column">
+                <div id="container_gauche_row">
+
+                    <div id="premiere_colonne">
+                        <h2>INDIQUEZ VOTRE SALAIRE BRUT</h2>
+
+                        <div class="colradio">
+                            <label for="hb1">Horaire Brut</label>
+                            <input id="hb1" type="number"  value="0" onkeyUp="hb1()">
+                        </div>
+
+                        <div class="colradio">
+                            <div id="colradio2">
+                                <label for="hb2">Mensuel Brut</label>
+                                <div id="pour">
+                                    <p>Non-Cadre-22%</p>
+                                </div>
+                            </div>
+                            <input id="hb2" type="number" value="0" onkeyUp="hb2()">
+                        </div>
+
+                        <div class="colradio">
+                            <label for="hb3">Annuel Brut</label>
+                            <input id="hb3" type="number" value="0" onkeyUp="hb3()">
+                        </div>
+
+                    </div>
+
+                    <div id="deuxieme_colonne">
+                        <h2>RESULTAT DE VOTRE SALAIRE NET</h2>
+
+                        <div class="colradio">
+                            <label for="hb4">Horaire Net</label>
+                            <input id="hb4" type="number" value="0"onkeyUp="hb4()">
+                        </div>
+
+                        <div class="colradio">
+                            <label for="hb5">Mensuel Net</label>
+                            <input id="hb5" type="number" value="0"onkeyUp="hb5()">
+                        </div>
+
+                        <div class="colradio">
+                            <label for="hb6">Annuel Net</label>
+                            <input id="hb6" type="number" value="0"onkeyUp="hb6()">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="container_gauche_statut_column">
+                    <h2>SELECTIONNEZ VOTRE STATUT :</h2>
+                    <div id="premiere_row">
+
+                        <div class="colradio1">
+                            <input type="radio" id="radio1" name="statut" onClick="radio1_()" checked>
+                            <label for="radio1">Salarié non cadre</label>
+                        </div>
+
+                        <div class="colradio1">
+                            <input type="radio" id="radio2" name="statut" onClick="radio2_()">
+                            <label for="radio2">Salarié cadre</label>
+                        </div>
+                        
+                        <div class="colradio1">
+                            <input type="radio" id="radio3" name="statut" onClick="radio3_()">
+                            <label for="radio3">Fonction publique</label>
+                        </div>
+
+                        <div class="colradio1">
+                            <input type="radio" id="radio4" name="statut" onClick="radio4_()">
+                            <label for="radio4">Profession libérale</label>
+                        </div>
+
+                        <div class="colradio1">
+                            <input type="radio" id="radio5" name="statut" onClick="radio5_()">
+                            <label for="radio5">Portage salarial</label>
+                        </div>
+
+                    </div>
+
+                </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
